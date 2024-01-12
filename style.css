@@ -1,0 +1,174 @@
+/*google icon import*/
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0');
+
+/*google font import*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #6096B4;
+  }
+
+  .container{
+    width: 450px;
+    background: #93BFCF;
+    border-radius: 10px;
+  }
+
+  .container h2{
+    font-weight: bolder;
+    font-size: 30px;
+    padding: 1rem 1.2rem;
+    border-bottom: 1px solid #7286D3;
+  }
+
+  .wrapper{
+    margin: 1.25rem 1.75rem;
+  }
+
+  .input-box input{
+    width: 100%;
+    height: 40px;
+    font-size: 17px;
+    color: black;
+    background: #E5E0FF;
+    font-weight: bold;
+    letter-spacing: 1.4px;
+    border-radius: 5px;
+    border: 1px solid #8294C4;
+    padding: 0 2.85rem 0 1rem;
+  }
+
+  .wrapper .input-box{
+    position: relative;
+  }
+
+  .input-box span{
+    position: absolute;
+    right: 10px;
+    line-height: 42px;
+    cursor: pointer;
+    color: #212A3E;
+  }
+
+  .wrapper .password-indicator{
+    position: relative;
+    width: 100%;
+    background: #FFA559;
+    height: 4px;
+    margin-top: 0.75rem;
+    border-radius: 25px;
+  }
+
+  .password-indicator::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 50%;
+    border-radius: inherit;
+    background: #FF6000;
+    transition: width 0.3s ease;
+  }
+
+  .password-indicator#weak::before{
+    background: red;
+    width: 20%;
+  }
+
+  .password-indicator#medium::before{
+    background: yellow;
+    width: 50%;
+  }
+
+  .password-indicator#strong::before{
+    background: green;
+    width: 100%;
+  }
+
+  .wrapper .password-length{
+    margin: 1.56rem 0 1.25rem;
+  }
+
+  .password-length .details{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .password-length input{
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+  }
+
+ .password-settings .options{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+
+  .password-settings .options .option{
+    display: flex;
+    margin-bottom: 1rem;
+    align-items: center;
+    width: calc(100% / 2);
+  }
+
+  .options .option:first-child{
+    pointer-events: none;
+  }
+
+  .options .option:first-child input{
+    opacity: 0.7;
+  }
+
+  .options .option label{
+    cursor: pointer;
+    padding-left: 0.65rem;
+  }
+
+  .options .option input{
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+  }
+
+  .wrapper .generate-btn{
+    width: 100%;
+    background: #3AA6B9;
+    font-size: 17px;
+    color: white;
+    padding: 0.9rem 0;
+    border-radius: 5px;
+    margin: 0.94rem 0 1.3rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.5s;
+  }
+
+  .wrapper .generate-btn:hover{
+    width: 100%;
+    background: #B9B4C7;
+    font-size: 17px;
+    color: black;
+    padding: 0.9rem 0;
+    padding: 1.2rem 0.2rem;
+    border-radius: 5px;
+    margin: 0.94rem 0 1.3rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
